@@ -1,0 +1,114 @@
+.container {
+    width: 300px;
+    margin: 60px auto;
+    padding: 30px 25px;
+    background: rgb(143, 16, 143);
+    border-radius: 5px;
+    box-shadow: 20px 20px 5px rgba(11, 11, 11, 0.373);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 95%;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 4px;
+    outline: none;
+    background: rgb(143, 16, 143);
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #045afa;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #0741ee;
+}
+
+.error {
+    color: #c00;
+    font-size: 13px;
+    height: 13px;
+    display: block;
+}
+
+.success {
+    color: #090;
+    font-size: 14px;
+    text-align: center;
+    height: 15px;
+}
+
+a {
+  color: #4f8cff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  text-align: center;
+}
+
+/* ------------------------------- */
+
+
+.form-group {
+  position: relative;
+  margin: 20px 0;
+}
+
+input {
+  width: 100%;
+  padding: 12px 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+/* Label inside the input initially */
+label {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  background-color: white;
+  padding: 0 4px;
+  color: black;
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.2s ease all;
+  background: rgb(143, 16, 143);
+}
+
+/* Move label when input is focused or has value */
+input:focus + label,
+input:not(:placeholder-shown) + label {
+  top: -10px;
+  left: 8px;
+  font-size: 12px;
+  color: black;
+  background: rgb(143, 16, 143);
+}

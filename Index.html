@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -32,13 +33,13 @@
             </div>
             <button type="submit">Register</button>
             <p class="success" id="reg-success"></p>
-            <p>Already have an account? <a href="#" class="show-login">Login</a></p>
+            <p>Already have an account? <a href="#" id="show-login">Login</a></p>
         </form>
 
         <!-------- Login Page --------->
 
         <form action="" id="login-form" style="display: none;">
-
+            <h2>Login</h2>
             <div class="form-group">
                 <input type="email" name="email" id="login-email" placeholder=" " required>
                 <label for="login-email">Email</label>
@@ -50,7 +51,7 @@
                 <span class="error"></span>
             </div>
             <button type="submit">Login</button>
-            <p class="success" id="log-success"></p>
+            <p class="success" id="login-success"></p>
             <p>Don't have an account? <a href="#" id="show-register">Register</a></p>
 
         </form>
